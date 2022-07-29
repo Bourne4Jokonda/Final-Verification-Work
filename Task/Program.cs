@@ -17,3 +17,20 @@ for (int i = 0; i < texts.Length; i++)
         }
 }
 string[] result=new string[count];
+void Main(string[] array1, string[] array2)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+        if (array1[i].Length <= 3)
+        {
+            array2[count] = array1[i];
+            count++;
+        }
+    }
+}
+Main(texts,result);
+for (int i = 0; i < result.Length; i++)
+{
+      Console.WriteLine(result[i]);
+}
